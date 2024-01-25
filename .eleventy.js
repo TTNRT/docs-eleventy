@@ -11,6 +11,7 @@ const { execSync } = require('child_process');
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(navigationPlugin)
+  config.addPassthroughCopy("src/CNAME");
   eleventyConfig.addPlugin(syntaxHighlightingPlugin)
 
   eleventyConfig.addPassthroughCopy("assets")
