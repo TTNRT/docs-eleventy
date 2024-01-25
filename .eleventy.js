@@ -15,7 +15,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("assets")
   eleventyConfig.addPassthroughCopy("fonts")
-  eleventyConfig.addPassthroughCopy("src/CNAME")
+  eleventyConfig.addPassthroughCopy("CNAME")
 
   // Font Awesome Icons
   library.add(fas)
