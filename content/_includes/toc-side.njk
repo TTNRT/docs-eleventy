@@ -1,0 +1,10 @@
+{% if content | toc %}
+<nav class="col-xl-3 position-relative d-none d-xl-block" id="toc-side" data-pagefind-ignore="all">
+  <div class="position-fixed  mr-20">
+    <span>On this page</span>
+    <div id="toc" class="overflow-y-auto" style="max-height: 43.75rem;">
+      {{ content | toc | safe }}
+    </div>
+  </div>
+</nav>
+{% endif %}

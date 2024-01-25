@@ -1,0 +1,12 @@
+{% if content | toc %}
+<nav class="d-xl-none mb-3" data-pagefind-ignore="all">
+  <details class="collapse-panel">
+    <summary class="collapse-header d-block w-full py-2 d-flex align-items-center justify-content-between">
+      <span class="antialiased">On this page</span>
+    </summary>
+    <div id="toc" class="collapse-content">
+      {{ content | toc | safe }}
+    </div>
+  </details>          
+</nav>
+{% endif %}
